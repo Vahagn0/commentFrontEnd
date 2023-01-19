@@ -1,0 +1,77 @@
+.App {
+  
+}
+
+.comment{
+    padding: 0;
+    display: flex;
+    height: 70px;
+    width: 600px;
+    font-size: 15px;
+    border-radius: 15px;
+}
+
+.text{
+    height: 70px ;
+    width: 580px;
+    background-color: #f4c2ff;
+    border-radius: 15px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input{
+    height: 100px;
+    width: 500px;
+    border-radius: 15px;
+    background-color: #f4c2ff;
+    font-size: 35px;
+    border: none;
+}
+
+.butt{
+    margin-left: 10px;
+    border: none;
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    background-color: #f0abff;
+    opacity: 0.6;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.butt:hover{
+    opacity: 2;
+}
+
+.commentButt{
+    margin-left: 10px;
+    margin-top: 15px;
+    border: none;
+    height: 70PX;
+    width: 100px;
+    border-radius: 15px;
+    background-color: #f0abff;
+    opacity: 0.6;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+.commentButt:hover{
+    opacity: 2;
+}
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
