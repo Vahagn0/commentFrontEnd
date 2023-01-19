@@ -3,6 +3,7 @@
 }
 
 .comment{
+    margin-top: 10px;
     padding: 0;
     display: flex;
     height: 70px;
@@ -23,6 +24,7 @@
 }
 
 .input{
+    padding-left: 18px;
     height: 100px;
     width: 500px;
     border-radius: 15px;

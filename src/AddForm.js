@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-function AddForm({comments,setComments}){
+function AddForm({setRender}){
 
     const [newComment,setNewComment] = useState("")
 
@@ -12,13 +12,7 @@ function AddForm({comments,setComments}){
         };
         fetch('http://localhost:4000/', requestOptions)
             .then(
-                setComments([
-                    ...comments,
-                    {
-                        _id: Math.random(),
-                        text : newComment,
-                    }   
-                ])
+                setRender(Math.random())
             );
     }
     
