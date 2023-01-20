@@ -20,7 +20,7 @@ function App() {
   return (
     <div className='main'>
       <div className='header'>
-        <Link className='link' to="/">Home</Link>
+        <Link className='link' to="/"></Link>
         <Link className="link" to="/aboutUs">About Us</Link>
       </div>
       <div className="App">
