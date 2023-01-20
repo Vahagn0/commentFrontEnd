@@ -1,7 +1,9 @@
-import AddForm from './AddForm';
 import './App.css';
-import CommentList from './commentList';
 import React, { useEffect, useState } from 'react';
+import Home from './home';
+import AboutUs from "./aboutUs"
+import { Route,Routes,Link} from 'react-router-dom'
+
 
 function App() {
 
@@ -16,11 +18,22 @@ function App() {
   
 
   return (
-    <div className="App">
-      <AddForm  setRender = {setRender}/>
-      <CommentList comments={comments} setComments = {setComments}/>
+    <div className='main'>
+      <div className='header'>
+        <Link className='link' to="/">Home</Link>
+        <Link className="link" to="/aboutUs">About Us</Link>
+      </div>
+      <div className="App">
+        <Routes>
+            <Route exact path="/" element={<Home  comments= {comments} setComments= {setComments} setRender= {setRender}/>} />
+            <Route path="/aboutUs" element={<AboutUs />} />
+        </Routes>
+      </div>
     </div>
+   
   );
 }
+
+
 
 export default App;
